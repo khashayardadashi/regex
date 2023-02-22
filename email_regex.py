@@ -2,7 +2,7 @@ import re
 input=input()
 email=re.match(r'^.+@\w+\.\w{2,3}$',input)
 a=re.match(r'^(.+)@\w+\.\w{2,3}$',input)
-b=re.match(r'^(.+)@(\w+)\.\w{2,3}$',input)
+b=re.match(r'^.+@(\w+)\.\w{2,3}$',input)
 c=re.match(r'^.+@\w+\.(\w{2,3})$',input)
 if email==None:
     print('WRONG')
