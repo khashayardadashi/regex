@@ -6,7 +6,7 @@ b=re.match(r'^.+@(\w+)\.\w{2,3}$',input)
 c=re.match(r'^.+@\w+\.(\w{2,3})$',input)
 if email==None:
     print('WRONG')
-elif a.string.isidentifier()==True and b.string.isidentifier()==True and c.string.isidentifier()==True:
-    print('OK')
-elif a.string.isidentifier()==False or b.string.isidentifier()==False or c.string.isidentifier()==False:
+elif a.string.isalnum()==False or b.string.isalnum()==False or c.string.isalpha()==False:
     print('WRONG')
+elif a.string.isalnum()==True and b.string.isalnum()==True and c.string.isalpha()==True:
+    print('OK')
